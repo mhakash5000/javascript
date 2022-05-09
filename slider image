@@ -1,0 +1,31 @@
+<!-- for Java Script slider image -->
+   <button onclick="prev()">prev</button>
+   <img src="images/js.jpg" alt="" width="300" height="300">
+   <button onclick="next()">next</button>
+
+   <script>
+        let photos = ["images/js.jpg","images/Laravel.png","images/py.jpg"];
+        let findImg = document.querySelector("img");
+
+        let count = 0;
+
+        function next(){
+            count++;
+            if(count>=photos.length){
+                count = 0;
+            findImg.src=photos[count];
+            }else{
+            findImg.src=photos[count];
+            }
+        }
+        function prev(){
+            count--;
+            if(count < 0){
+                count = photos.length -1;
+                findImg.src=photos[count];
+            }else{
+                findImg.src=photos[count];
+            }
+        
+        }
+   </script>
