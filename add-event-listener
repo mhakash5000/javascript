@@ -17,12 +17,12 @@
 
 //javascript
 <script>
-let len = document.querySelector(".myBtn").length;
-for(let i = 0; i <= len; i++){
+let len = document.querySelectorAll(".myBtn").length;
+for(let i = 0; i < len; i++){
     let findBtn = document.querySelectorAll(".myBtn")[i];
     findBtn.addEventListener("click",function(){
-    let text = this.innerHTML;
-    document.querySelector("h1").innerHTML=text + " is clicked ";
-    });
+        let text = this.innerHTML;
+        document.querySelector("h1").innerHTML=text + " is clicked ";
+    })
 }
 <script/>
