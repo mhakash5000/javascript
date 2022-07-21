@@ -4,19 +4,10 @@
  <button class="myBtn">Two</button>
  <button class="myBtn">Three</button>
 
-//css
-<style>
-  .fontStyle{
-      color: rgba(236, 0, 0, 0.486);
-      font-size: 35px;
-      font-weight: bolder;
-      font-style: italic;
-  }
-<style/>
 
 
 //javascript
-<script>
+
 let len = document.querySelectorAll(".myBtn").length;
 for(let i = 0; i < len; i++){
     let findBtn = document.querySelectorAll(".myBtn")[i];
@@ -25,4 +16,4 @@ for(let i = 0; i < len; i++){
         document.querySelector("h1").innerHTML=text + " is clicked ";
     })
 }
-<script/>
+
