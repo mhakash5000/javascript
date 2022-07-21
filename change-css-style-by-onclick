@@ -1,0 +1,14 @@
+ <p>Hey ! this is akash</p>
+ <button onclick="addStyle()" >add Style</button>
+ <button onclick="removeStyle()">Remove Style</button>
+
+
+
+let findP = document.querySelector("p");
+function addStyle(){
+ findP.classList.add("fontStyle");
+}
+function removeStyle(){
+    findP.classList.remove("fontStyle");
+}
+
